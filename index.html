@@ -66,7 +66,7 @@
         ></a-entity>
 
         <!-- Timer -->
-        <a-entity position="-23.5 19.3 0">
+        <a-entity position="-23.5 19.3 0" id="timerentity">
           <a-entity
             position="-1.5 0.07 0"
             text="font: aileronsemibold; width: 12; color: black; value: TIME\nREMAINING"
@@ -77,8 +77,19 @@
             text="font: exo2bold; align: center; width: 30; color: black; value: 00:00"
           ></a-entity>
         </a-entity>
-        
+        <!--Targets remaining-->
+        <a-entity position="-18 19.3 0">
+          <a-entity position="-0.6 0.13 0" text="font:aileronsemibold;width:12;color:black;value:TARGETS\nREMAINING"></a-entity>
+          <a-entity id="targets" position="-8 0.3 0" text="font:exo2bold;width:30;color:black;value:20;align:center;"></a-entity>
+        </a-entity>
+        <!--Score-->
+        <a-entity position="30.5 21.5 0">
+          <a-entity text="font:aileronsemibold;width:40;color:black;value:SCORE"></a-entity>
+          <a-entity position="0 -2 0" id="score" text="font:exo2bold;width:40;color:black;value:0;align:center;"></a-entity>
+        </a-entity>
       </a-entity>
+      <!--Game over-->
+      <a-entity id="gameovertext" position="0 7.5 0" text="font:aileronsemibold;width:100;align:center;value:GAME OVER;color:white" visible="false"></a-entity>
 
       
     </a-scene>
